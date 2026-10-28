@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Workshop</title>
+</head>
+<body>
+<header>
+	<h1>Pragmatic Programmer Hub</h1>
+	<p>From Idea to Execution: Master the Code.</p>
+</header>
+
+	<nav>
+		<a href="#about">About</a> |<a href="#schedule">Event Schedule</a> | <a href="#register">Registration</a>  
+	
+	</nav>
+
+	<section id="about">
+		<h2>About the Event</h2>
+		<p>Pragmatic Programmer Hub is a workshop that is organised to introduce student to programming world 		and web development.</p>
+
+		<!--Speaker Introduction-->
+	<article>
+		<h3>Introduction to Programming</h3>
+		<p>Dr.Ehsan will introduce the basics of programming to the student and explain how programming is 		used to solve a problems.</p>
+	</article>
+		<!--Activity Introduction-->
+	<article>
+		<h3>Introduction to HTML</h3>
+		<p>Dr.Khay will explain and teach the student to create a simple web page using HTML.</p>
+		
+	</article>
+	</section>
+	
+	<!--Event schedule-->
+	<section id="schedule">
+	<h2>Event Schedule</h2>
+	<table border="1">
+	<tr>
+		<th>Time</th>
+		<th>Activity</th>
+		<th>Venue</th>
+		<th>Person in Charge</th>
+	</tr>	
+	
+	<tr>
+		<td>8.00-9.00 am</td>
+		<td>Registration</td>
+		<td>BYOD 1</td>
+		<td>Dr.Ameena</td>
+	</tr>
+
+	<tr>
+		<td>9.00-10.00 am</td>
+		<td>Opening Ceremony</td>
+		<td rowspan="2">Computer Lab 1</td>
+		<td>Dr.Ehsan</td>
+	</tr>
+
+	<tr>
+		<td>10.00-11.00 am</td>
+		<td>HTML Workshop</td>
+		<td>Dr.Khay</td>
+	</tr>
+	
+	<tr>
+		<td>11.00-12.00 pm</td>
+		<td colspan="3">Lunch Break</td>
+	</tr>
+
+	<tr>
+		<td>12.00-1.00 pm</td>
+		<td>Hands-on Practice</td>
+		<td rowspan="2">Computer Lab 1</td>
+		<td>Dr.Ehsan</td>
+	</tr>
+
+	<tr>
+		<td>1.00-2.00 pm</td>
+		<td>Java Programming</td>
+		<td>Dr.Daniel</td>
+	</tr>
+
+	<tr>
+		<td>2.00-4.00 pm</td>
+		<td>Group Activity</td>
+		<td>Computer Lab 2</td>
+		<td>Dr.Khay</td>
+	</tr>
+
+	<tr>
+		<td>4.00-5.00 pm</td>
+		<td>Closing Ceremony</td>
+		<td>Computer Lab1</td>
+		<td>Dr.Ehsan</td>
+	</tr>
+	</table>
+
+	</section>
+
+	<!--Registration Section-->
+	<section id="register">
+        <h2>User Registration form</h2>
+	<form action="register.html" method="post">
+	
+	<label for="fullname">Full Name:</label><br>
+	<input type="text" id="fullname" name="fullname"><br><br>
+
+	<label for="matric">Matric Number:</label><br>
+	<input type="text" id="matric" name="matric"><br><br>
+
+	<label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+	<p>Year of Study<p>
+	<input type="radio" id="year1" name="year" value="year 1">
+	<label for="year1">Year 1</label><br><br>
+
+	<input type="radio" id="year2" name="year" value="year 2">
+	<label for="year2">Year 2</label><br><br>
+
+	<input type="radio" id="year3" name="year" value="year 3">
+	<label for="year3">Year 3</label><br><br>
+
+	<input type="radio" id="year4" name="year" value="year 4">
+	<label for="year4">Year 4</label><br><br>
+
+	<label for="programme">Programme :</label><br>
+	<select id="programme" name="progOrFaculty">
+	<option value="softwareEngineering">Software Engineering</option>
+	<option value="mobileComputing">Mobile Computing</option>
+	<option value="IT">Information Technology</option>
+	</select><br><br>
+
+	<p>Event Session</p>
+
+	<input type="checkbox" id="html" name="session" value="HTML Workshop">
+        <label for="html">HTML Workshop</label>
+
+        <input type="checkbox" id="java" name="session" value="Java Programming">
+        <label for="java">Java Programming</label>
+
+        <input type="checkbox" id="project" name="session" value="Group Activity">
+        <label for="project">Group Activity</label><br><br>
+
+	
+        <input type="submit" value="Submit">
+
+</form>
+</section>	
+	<!--footer-->		
+<footer>
+	<p>Organised by the Pragmatic Programmer Hub Committee.</p>
+        <p>&copy; 2026 Faculty of Computer Science and Mathematics</p>
+ </footer>
+</body>
+
+
+</html>
