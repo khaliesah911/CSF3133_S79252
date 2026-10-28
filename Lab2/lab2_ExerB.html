@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Course Feedback</title>
+</head>
+<body>
+
+<!-- Error 1 (Line 10): Incorrect </head>; closing tag.
+    It should be </header>.
+
+    Error 2 (Line 20): Rating uses <td> instead of <th>.
+
+    Error 3 (Line 26): Missing closing </tr> for Week 1
+    before the next table row.
+
+    Error 4 (Line 28): colspan=“3” creates an incorrect
+    number of columns in the Week 2 row.
+
+    Error 5 (Line 32): Missing closing </td> before
+    the Rating cell.
+
+    Error 6 (Line 39-40): The label for=“name” does not
+    match the input id=“fullname”.
+
+    Error 7 (Line 42 and Line 44): Radio buttons use
+    different names, so they cannot work as one group.
+
+    Error 8 (Line 47): The label for=“labs” does not
+    match the checkbox id=“lab”.
+
+    Error 9 (Line 49): Incorrect closing tag </from>.
+    It should be </form>.
+
+    Error 10 (Line 52): The copyright entity is missing
+    its semicolon. -->
+
+<header>
+<h1>CSF3133 Course Feedback</h1>
+</header>
+<nav>
+	<a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+</nav>
+	<section id="results">
+	<h2>Feedback Summary</h2>
+
+	<table border="1">
+	<tr>
+		<th>Week</th>
+		<th>Topic</th>
+		<th>Rating</th>
+	</tr>
+
+	<tr>
+		<td>1</td>
+		<td>Introduction to HTML</td>
+		<td>4.5</td>
+	<tr>
+		<td>2</td>
+		<td>Tables and Forms</td>
+		<td>4.2</td>
+	</tr>
+	   <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+	<tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.3</td>
+            </tr>
+
+            <tr>
+               <td>5</td>
+                <td>4.6</td>
+            </tr>	
+			
+	<tr>
+		<td colspan="2">Average Rating</td>
+		<td>4.4</td>
+	</tr>
+
+	</table>
+	
+	</section>
+	<section id="form">
+	<h2>Give Your Feedback</h2>
+	<form action="submit_feedback.php" method="post">
+	
+	<label for="fullname">Name:</label><br>
+	<input type="text" id="fullname" name="name"><br><br>
+
+	<label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+	
+	<label>Overall rating:</label><br>
+	<input type="radio" id="good" name="rating" value="good">
+	<label for="good">Good</label>
+
+	<input type="radio" id="poor" name="rating" value="poor">
+	<label for="poor">Poor</label><br><br>
+
+	<input type="checkbox" id="lab" name="lab" value="yes">
+	<label for="lab">I attended all labs</label><br><br>
+
+	<p>Topics I want more practice on</p>
+
+	<input type="checkbox" id="tables" name="topics" value="Tables">
+	<label for="tables">Tables</label><br>
+
+	<input type="checkbox" id="forms" name="topics" value="Forms">
+	<label for="forms">Forms</label><br>
+
+	<input type="checkbox" id="semantic" name="topics" value="Semantic HTML">
+	<label for="semantic">Semantic HTML</label><br><br>
+
+
+	<!-- New section: Section or Group dropdown -->
+        <label for="group">Section/Group:</label>
+
+        <select id="group" name="group" required>
+                <option value="">-- Select Group --</option>
+                <option value="Group 1">Group 1</option>
+                <option value="Group 2">Group 2</option>
+                <option value="Group 3">Group 3</option>
+        </select><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Feedback">
+
+        </form>
+    </section>
+
+    <!-- Section 3: Student Comments -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+
+        <!-- Article 1: First student comment -->
+        <article>
+            <h3>Khaliesah Huda</h3>
+            <p>
+                The HTML practical exercises helped me
+                understand the topics better.
+            </p>
+        </article>
+
+        <!-- Article 2: Second student comment -->
+        <article>
+            <h3>Asna Syamimi</h3>
+            <p>
+                I would like more practice on tables,
+                forms and semantic HTML.
+            </p>
+        </article>
+    </section>
+
+    <!-- Footer: Copyright information -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
+	
