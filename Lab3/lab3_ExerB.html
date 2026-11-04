@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Ticket Booking</title>
+</head>
+<body>
+<!-- Errors in the original given code:
+Error 1 (Line 1): Incomplete DOCTYPE declaration.
+Error 2 (Line 9): Incorrect span and h1 nesting.
+Error 3 (Line 11): use span instead of div.
+Error 4 (Line 13): use < instead of &lt; and use incorrect ampersand entity.
+Error 5 (Line 14): Adult and child values added as text.
+Error 6 (Line 18): emial should be email.
+Error 7 (Line 18): Email input missing required.
+Error 8 (Lines 22-26): Datalist ID does not match.
+Error 9 (Lines 28-30): Ticket inputs missing min="0".
+Error 10 (Line 32): Range min exchanged with max.
+Error 11 (Line 33): Incorrect output for attribute.
+Error 12 (Line 38): &Copy; should be &copy;.
+Error 13 (Lines 54-55): Extra closing body and html tags.
+-->
+
+<!-- Header section -->
+<div id="header">
+    <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+</div>
+
+<!-- Main content section -->
+<div id="content">
+
+    <h2>Book Your Ticket</h2>
+
+    <p>
+        Promotion: tickets &lt; RM10 for students &amp; staff!
+    </p>
+
+    <!-- Ticket booking form -->
+    <form action="booking.php" method="post" oninput="total.value=Number(adult.value)+Number(child.value);
+    price.value=(Number(adult.value) * 12)+(Number(child.value) * 8)">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Phone number input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <br><br>
+
+        <label for="date">Show Date:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+        <!-- Show time input -->
+        <label for="time">Show Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <label for="movie">Movie:</label>
+        <input type="text" id="movie" name="movie" list="movies">
+
+        <datalist id="movies">
+            <option value="Despicable Me">
+            <option value="Frozen">
+            <option value="The Avengers">
+        </datalist>
+        <br><br>
+
+        <label for="adult"> Adult Tickets (RM 12 each): </label>
+        <input type="number" id="adult" name="adult" min="0" value="0">
+        <br><br>
+
+        <label for="child"> Child Tickets (RM 8 each): </label>
+        <input type="number" id="child" name="child" min="0" value="0">
+        <br><br>
+
+        <label for="rating">Rate Our Service:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" step="1">
+        <br><br>
+
+        <!-- Total ticket calculation -->
+        Total Tickets: <output name="total" for="adult child">0</output>
+	<br><br>
+
+        <!-- Total price calculation -->
+        Total Price: RM <output name="price" for="adult child">0</output>
+        <br><br>
+
+        <input type="submit" value="Book Now">
+
+    </form>
+</div>
+
+<!-- Sidebar section -->
+<div id="sidebar">
+
+    <h2>Now Showing</h2>
+
+    <ul>
+        <li>
+            <strong>Despicable Me</strong>
+            <span>(P13)</span>
+            <a href="https://www.youtube.com/results?search_query=Despicable+Me+trailer"> Watch Trailer </a>
+        </li>
+
+        <li>
+            <strong>Frozen</strong>
+            <span>(U)</span>
+            <a href="https://www.youtube.com/results?search_query=Frozen+trailer"> Watch Trailer </a>
+        </li>
+
+        <li>
+            <strong>The Avengers</strong>
+            <span>(P13)</span>
+            <a href="https://www.youtube.com/results?search_query=The+Avengers+trailer"> Watch Trailer </a>
+        </li>
+    </ul>
+
+</div>
+
+<!-- Footer section -->
+<div id="footer">
+    <p>
+        e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday
+    </p>
+
+    <p>&copy; 2026 CineKampus. All rights reserved.</p>
+</div>
+</body>
+</html>
