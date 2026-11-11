@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Heading Styling */
+        h1 {
+            text-decoration: overline;
+            text-align: center;
+        }
+
+        /* Paragraph Styling */
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+
+        /* Intro Section */
+        #intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 15px;
+        }
+
+        /* Highlight Price */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+        /* Menu Section */
+        #menu {
+            padding: 20px;
+        }
+
+        /* Feedback Form */
+        .feedback-form {
+            background-color: #FDEBD0;
+            padding: 20px;
+            border: 1px solid #E67E22;
+            width: 90%;
+            max-width: 450px;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type=“email”] {
+
+            width: 90%;
+            padding: 8px;
+
+        }
+
+        .feedback-form input[type="submit"] {
+            background-color: #E67E22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        /* Video Responsive */
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Old Price */
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        /* Video Caption */
+        figcaption {
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1A5276;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--Error Identification and Correction
+
+         Error 1 (Line 152): CSS comment uses incorrect syntax.
+         Error 2 (Line 154): list-style-type value "no" changed to "none".
+         Error 3 (Lines 159-160): Link states placed in incorrect order.
+         Error 4 (Line 162): "overlined" changed to "overline".
+         Error 5 (Line 163): Missing colon after color.
+         Error 6 (Line 167): Missing closing brace for #intro and missing dot before highlight.
+         Error 7 (Line 179): Menu link changed to href="#menu".
+         Error 8 (Lines 188 and 192): Duplicate id=“item” changed to class="item".
+         Error 9 (Line 201): Added controls attribute to video.
+         Error 10 (Line 202): Video type changed to video/mp4.
+         Error 11: Added viewport meta tag.
+         Error 12: Added external CSS file cafe.css.
+-->
+
+    <!-- Header Section -->
+
+    <header>
+        <h1>e-Café Campus</h1>
+        <p style="text-align: center;">
+            Welcome to e-Café Campus
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+
+    <section id="menu">
+        <h2>Today’s Menu</h2>
+
+        <p id="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 4.50</span>
+                New Price:
+                <span class="highlight">RM 3.50</span>
+            </p>
+
+        </article>
+<article class="item">
+
+            <h3>Nasi Lemak</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 6.50</span>
+                New Price:
+                <span class="highlight">RM 5.00</span>
+            </p>
+
+        </article>
+    </section>
+
+    <!-- Video Section -->
+
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Welcome to e-Café Campus. Enjoy our delicious food and drinks.
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <!-- Feedback Form Section -->
+
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+        <form class="feedback-form">
+            <label>Name:</label><br>
+            <input type="text" name="name" required>
+            <br><br>
+            <label>E-mail:</label><br>
+            <input type="email" name="email" required>
+            <br><br>
+            <label>Visit Type:</label><br>
+            <input type="radio" name="visit" value="Dine-in">Dine-in
+            <input type="radio" name="visit" value="Take-away">Take-away
+            <br><br>
+            <label>Favourite Items:</label><br>
+            <input type="checkbox" name="favourite" value="Kopi Tarik"> Kopi Tarik
+            <input type="checkbox" name="favourite" value="Nasi Lemak"> Nasi Lemak
+            <input type="checkbox" name="favourite" value="Tea">Tea
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer id="contact">
+        <p style="text-align: center; color: white;">
+            &copy; 2026 e-Café Campus
+        </p>
+
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@campus.com">ecafe@campus.com
+            </a>
+
+        </address>
+
+    </footer>
+
+</body>
+
+</html>
