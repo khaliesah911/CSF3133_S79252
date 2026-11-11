@@ -1,0 +1,60 @@
+/* Navigation Bar Styling */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1A5276;
+    text-align: center;
+}
+
+/* Display Navigation Links */
+nav li {
+    display: inline-block;
+}
+
+/* Navigation Link Styling */
+nav a {
+    display: block;
+    background-color: #1A5276;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Navigation Hover Effect */
+nav a:hover {
+    background-color: #E67E22;
+}
+
+/* Link States - Correct Order */
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Center Video */
+figure{
+text-align:center;
+}
+
+
+/* Keep Navigation Links White */
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: white;
+}
