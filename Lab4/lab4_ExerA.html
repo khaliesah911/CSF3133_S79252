@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visit Terengganu</title>
+	
+	<!--External CSS -->
+	<link rel="stylesheet" href="style.css">
+	
+	<!--Internal CSS -->
+	<style>
+		#video{
+			background-color: #e0f2f1;
+			padding: 20px;
+		}
+		.caption{
+			font-style: italic;
+			text-align: center;
+	</style>
+</head>
+<body>
+	<!--Header Section -->
+	<header>
+		<h1>Visit Terengganu</h1>
+		<p>Discover the Beautiful of Terengganu</p>
+	</header>
+
+	<!--Navigation Section -->
+	<nav>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#video">Video</a></li>
+			<li><a href="#destinations">Destinations</a></li>
+			<li><a href="#trip">Trip</a></li>
+		</ul>
+	</nav>
+
+	<!--Home Section -->
+	<section id="home">
+		<h2>Welcome to Terengganu</h2>
+		<p>Come and explore the beautiful island,amazing attractions and taste the delicious local food in Terengganu.</p>
+	</section>
+
+	<!--Destinations Section -->
+	<section id="destinations">
+
+		<h2>Popular Destination in Terengganu</h2>
+		<div class="container">
+
+		<article class="card">
+		<h3>Redang Island</h3>
+		<p>Enjoy the one of the most beautiful island in Malaysia with turquoise blue waters and abundance of fascinating marine life.</p>
+		<p>
+			<span class="old-price">RM 299</span>
+			<span class="price">RM 199</span>
+		</p>
+
+		</article>
+
+		<article class="card">
+		<h3>Crystal Mosque</h3>
+		<p>Enjoy the striking glass and steel design of mosque in the Terengganu River. </p>
+		<p>
+			<span class="old-price">RM 30</span>
+			<span class="price">RM 20</span>
+		</p>
+
+		</article>
+
+		<article class="card">
+		<h3>Kenyir Lake</h3>
+		<p>Discover the beautiful scenary,waterfall and nature activities in the largest man-made lake in Malaysia . </p>
+		<p>
+			<span class="old-price">RM 200</span>
+			<span class="price">RM 150</span>
+		</p>
+
+		</article>
+		</div>
+
+		<p>Trip Seats Filled:<meter min="0" max="40" value="28">28 out of 40</meter> 28/40 </p>
+		</section>
+
+
+	<!--Video Section -->
+	<section id="video">
+		<h2>Explore Terengganu</h2>
+		<figure>
+			<video width="500" height="300" controls>
+			<source src="terengganu.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+
+			<figcaption class="caption">
+			Discover the beautiful attractions of Terengganu.
+			</figcaption>
+		</figure>
+	</section>
+
+	<!--Trip Section -->
+	<section id="trip">
+		<h2>Plan Your Trip Now</h2>
+		<form class="trip-form">
+			<label>Name:</label><br>
+			<input type="text" name="name" required><br><br>
+			<label for="email">E-mail:</label><br>
+			<input type="email" id="email" name="email" required>
+			<br><br>
+			<label>Traveller Type:</label><br>
+			<input type="radio" name="traveller" value="Student">Student
+			<input type="radio" name="traveller" value="Staff">Staff
+			<input type="radio" name="traveller" value="Public">Public
+			<br><br>
+			<label>Interest:</label><br>
+			<input type="checkbox" name="interest" value="Islands">Islands
+			<input type="checkbox" name="interest" value="Food">Food
+			<input type="checkbox" name="interest" value="Culture">Culture
+			<input type="checkbox" name="interest" value="Nature">Nature
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+
+	<!--Footer Section -->
+	<footer>
+		<p>&copy; 2026 Visit Terengganu;. All rights reserved.</p>
+        	<address>
+			Contact us:
+			<a href="mailto:visitterengganu@gmail.com">
+			visitterengganu@gmail.com
+			</a>
+		</address>
+	</footer>
+    		
+
+</body>
+</html>
