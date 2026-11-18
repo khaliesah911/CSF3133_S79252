@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+    <!--
+    Errors corrected:
+
+    1. shop.html, Line 7:
+       Changed rel="stylesheets" to rel="stylesheet".
+
+    2. shop.html, Line 13:
+       Added <nav> structure for navigation menu.
+
+    3. shop.html, Line 18:
+       Corrected invalid inline CSS color syntax.
+
+    4. shop.html:
+       Added <header> structure.
+
+    5. shop.html:
+       Added <main> structure.
+
+    6. shop.css, Line 2:
+       Changed 'Robotto' to 'Roboto'.
+
+    7. shop.css, Line 4:
+       Changed 'no repeat' to 'no-repeat'.
+
+    8. shop.css, Line 5:
+       Corrected 'bacground-position' to 'background-position'.
+
+    9. shop.css, Line 18:
+       Changed display: inline to display: block.
+
+    10. shop.css, Line 23:
+        Changed li:a:hover to li a:hover.
+
+    11. shop.css, Line 27:
+        Changed border-collapse: collapsed to collapse.
+
+    12. shop.css, Line 34:
+        Changed nth-child(2) to nth-child(even).
+
+    13. shop.css, Line 37:
+        Changed :hovered to :hover.
+
+    14. shop.css, Line 45:
+        Added missing semicolon.
+
+    15. shop.css:
+        Corrected the table selector from #products to #product.
+    -->
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="books">
+
+            <h2>Our Products</h2>
+
+            <p>
+                Find useful textbooks, stationery and gadgets for your studies.
+                Our bookstore provides affordable items to support every student
+                throughout the semester.
+            </p>
+
+            <!-- Product Table -->
+            <table id="product">
+
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Price (RM)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Web Design Basics</td>
+                        <td>Textbook</td>
+                        <td class="price">45.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>A4 Notebook</td>
+                        <td>Stationery</td>
+                        <td class="price">6.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>USB Drive 32GB</td>
+                        <td>Gadget</td>
+                        <td class="price">25.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Highlighter Set</td>
+                        <td>Stationery</td>
+                        <td class="price">9.90</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+
+</body>
+</html>
