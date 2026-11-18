@@ -1,0 +1,162 @@
+/* General Page Styling */
+body {
+margin: 0;
+padding: 0;
+background-color: #FBF7F0;
+color: #2C2C2C;
+font-family: 'Open Sans', sans-serif;
+}
+
+/* Header with Background Image */
+header{
+	background-image: url("header-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+	padding: 70px 20px;
+	min-height: 190px;
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+header h1 {
+font-family: 'Poppins', sans-serif;
+font-size: 36px;
+margin: 0;
+padding-top: 10px;
+}
+
+header p {
+    text-align: center;
+    margin:0;
+}
+
+/* 2. Horizontal Navigation Bar */
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #2C2C2C;
+}
+
+nav li {
+float: left;
+}
+
+nav li a {
+display: block;
+color: white;
+text-decoration: none;
+padding: 14px 20px;
+
+}
+
+nav li a:hover {
+background-color: #111;
+}
+
+nav li a.active {
+background-color: #E67E22;
+}
+
+/* 3. Main Content */
+main {
+width: 90%;
+max-width: 980px;
+margin: 0 auto;
+
+}
+
+section {
+margin-bottom: 35px;
+}
+
+h2 {
+font-family: 'Poppins', sans-serif;
+font-size: 17px;
+color: #1B4F72;
+margin-top: 15px;
+margin-bottom: 12px;
+}
+
+p {
+font-size: 11px;
+line-height: 1.6;
+text-align: justify;
+margin-bottom: 22px;
+}
+
+/* 5. Stalls and Menu Table */
+#food {
+border-collapse: collapse;
+width: 100%;
+margin-top: 15px;
+}
+
+#food th,
+#food td {
+border: 1px solid #ddd;
+padding: 12px;
+
+}
+
+#food th {
+background-color: #E67E22;
+color: white;
+text-transform: uppercase;
+text-align: center;
+
+}
+
+#food tr:nth-child(3) {
+background-color: #FDEBD0;
+}
+#food tr:nth-child(1), 
+#food tr:nth-child(5) {
+background-color: #F2F2F2;
+}
+
+#food tr:hover {
+background-color: #EFE6D8;
+}
+
+#food td:last-child {
+text-align: right;
+}
+
+/* 6. Footer */
+footer {
+background-color: #EFE6D8;
+text-align: center;
+padding: 15px;
+margin-top: 30px;
+}
+
+footer p {
+text-align: center;
+margin: 0px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+header h1 {
+    font-size: 22px;
+}
+
+nav li {
+    float: left;
+}
+
+main {
+    width: 92%;
+}
+
+#food th,
+#food td {
+    padding: 6px 4px;
+    font-size: 10px;
+}
+}
