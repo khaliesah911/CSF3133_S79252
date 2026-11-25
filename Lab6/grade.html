@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Page heading -->
+    <h2>Student Grade Calculator</h2>
+
+    <!-- Grade form -->
+    <form name="gradeForm" onsubmit="return checkMark()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="mark">Mark (0-100):</label>
+        <input type="text" id="mark" name="mark">
+        <br><br>
+        <button type="submit">Check Grade</button>
+
+        <!-- Random mark button -->
+        <button type="button" onclick="randomMark()">
+            Random Mark
+        </button>
+
+    </form>
+
+    <!-- Display result -->
+
+    <p id="result"></p>
+
+    <!-- Display checking date and time -->
+    <p id="checkTime"></p>
+
+    <!-- Show grade table button -->
+    <button onclick="showTable()">Show Grade Table</button>
+
+    <!-- Grade table container -->
+    <div id="tableContainer"></div>
+
+    <!-- Link JavaScript file -->
+    <script src="grade.js"></script>
+
+</body>
+
+</html>
